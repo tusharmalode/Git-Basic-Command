@@ -1,2 +1,32 @@
-git --version
-git <add filename>
+# To check the git version 
+    --> git --version
+
+# After create the the specific folder (repo) on local machine you need to initialize it.
+    --> git init 
+   - It downloads the dependencies and initialize the git i.e create .git folder.
+
+# For authenticate the USER with EMAIL
+    --> config --global --list
+    --> config --global user.name <USERNAME>
+    --> config --global user.email <EMAIL>
+    Note:: It only need to specify once on machine.
+
+# To add the file(UNTRACKED) in staged area(TRACKED)
+    --> git add <filename>
+    --> git add .   ---> to add the all the file at once 
+
+# Added the file in commited (LOCAL REPOSITORY) area 
+    --> git commit -m "add some msg here for our conviniance"
+
+# Now we want to upload(push) this file on remote server(GitHub)
+# local repo ----> remote repo 
+# [1] We need to set up the connection in between them   
+    --> git remote add origin <URL OF GitHub>
+    --> git remote -v  # to see remote origin URL. you see fetch and push origin
+# [2] After successsfully set up connection now push file
+    --> git push -u origin master
+
+# to check the status 
+    --> git status
+    --> git status -s                
+
