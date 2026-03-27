@@ -34,8 +34,19 @@
     --> git log
     --> git log --oneline
 
- # To restore the change from staging area  
+ # To restore the change from staging area to working dir. 
     --> git restore --staged . OR <filename>
 
-                 
+# Revert the changes from commited area ----> working dir.
+    --> git revert <CID>     -----> CID = commmit id
+        # It stores the commit history and anyone can see it.
+
+# Revert the changes and also To delete the commit history
+ # commit area ---> working dir.
+    --> git reset --hard <CID>
+        # HERE , CID is mention of the correct version that we want to keep the all commit over the CID you mention that is deleted.
+
+    --> git reset --soft <CID>
+        # This keep your work in staging area
+
 
