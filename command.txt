@@ -28,5 +28,14 @@
 
 # to check the status 
     --> git status
-    --> git status -s                
+    --> git status -s       
+
+# To see the commit history
+    --> git log
+    --> git log --oneline
+
+ # To restore the change from staging area  
+    --> git restore --staged . OR <filename>
+
+                 
 
